@@ -75,15 +75,14 @@ class IntrusionDetector:
                     state["last_capture"] = current_time
                     folder = "screenshots"
                     os.makedirs(folder, exist_ok=True)
-                    # Unique filename using timestamp
+                    
                     filename = f"alarm_{int(current_time)}.png"
                     path = os.path.join(folder, filename)
                     screenshot = pyautogui.screenshot()
 
-                        # Resize to 1080x720
                     screenshot = screenshot.resize((1080, 720), Image.LANCZOS)
 
-                        # Save
+                       
                     screenshot.save(path)
                     print("Screenshot saved:", path)
 
