@@ -1,21 +1,4 @@
-simple intrusion detection app which is created using Using Yolov8n and opencv
-
-
-features:
-- Detect 'person' class (COCO class id 0) in video frames using YOLOv8.
-- Draw restricted polygons over a paused frame (mouse clicks).
-- Save/load polygon coordinates to restricted_zones.json.
-- Display zone boundaries during running.
-- Show "alarm!" when a person is inside a zone; silence alarm 3 seconds after person leaves.
-
-
-
-
-controls:
-- `d` — enter drawing mode (video paused). Left-click to add a point, Right-click to undo last point.
-- `n` — finish the current polygon (need at least 3 points).
-- `s` — save zones to `restricted_zones.json`.
-- `l` — load zones from `restricted_zones.json`.
-- `r` — reset zones (if not drawing) or reset current drawing (if drawing).
-- `p` — pause / unpause playback.
-- `q` — quit.
+ultralytics
+opencv-python
+numpy
+pyautogui

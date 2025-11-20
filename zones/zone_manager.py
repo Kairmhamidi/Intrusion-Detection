@@ -58,7 +58,7 @@ class RestrictedZoneManager:
         self.zones = []
         print("[Zones] All zones cleared.")
 
-    # --- Mouse & drawing ---
+    # Mouse & drawing 
     def on_mouse(self, event, x, y, flags, param):
         if not self.drawing_mode:
             return

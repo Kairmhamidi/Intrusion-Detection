@@ -67,7 +67,7 @@ class IntrusionDetector:
                 current_time = time.time()
                 pts = np.array(zone, dtype=np.int32)
                 cen = np.mean(pts, axis=0).astype(int)
-                cv2.putText(frame, "ALarm! Leave", (int(cen[0])-40, int(cen[1])), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0,0,255),3)
+                cv2.putText(frame, "ALarm!", (int(cen[0])-40, int(cen[1])), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0,0,255),3)
                 overlay = frame.copy()
                 cv2.fillPoly(overlay, [pts], (0,0,255))
                 cv2.addWeighted(overlay, 0.15, frame, 0.85, 0, frame)

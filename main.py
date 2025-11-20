@@ -23,7 +23,7 @@ def main():
     try:
         model.to(args.device)
     except Exception as e:
-        print(f"[Model] Warning:could not set the device{args.device}: {e}.")
+        print(f" Warning:could not set the device{args.device}: {e}.")
 
     detector = IntrusionDetector(model, zone_mgr)
 
